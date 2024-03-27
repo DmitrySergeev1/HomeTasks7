@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function data(){
+            let mes= ["января", "февраля", "марта","апреля", "мая","июня","июля", "августа", "сентября", "октября","ноября","декабря"];
+            let BirthDay=new Date((prompt("Введите вашу дату рождения в формате ГГ.ММ.ДД")));
+            let year=BirthDay.getFullYear();
+            let month=BirthDay.getMonth();
+            let mesyatz=mes[month];
+            let day=BirthDay.getDate();
+            console.log(`Вы родились ${day}-го ${mesyatz} ${year} года`);
+        }
+        data();
+    </script>
+</body>
+</html>
