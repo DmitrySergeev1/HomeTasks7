@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let date=new Date();
+        function CalcDaysofWeek(){
+        let daysofWeek=["вс",
+        "пн",
+        "вт",
+        "ср",
+        "чт",
+        "пт",
+        "сб"];
+        let dayNow=date.getDay();
+        let dayTomorrow=(date.getDay()+1);
+        let dayPast=(date.getDay()-1);
+        let dayN=daysofWeek[dayNow];
+        let dayT=daysofWeek[dayTomorrow];
+        let dayP=daysofWeek[dayPast];
+        console.log(`сегодня ${dayN}  завтра ${dayT} вчера ${dayP}`);
+        }
+        CalcDaysofWeek();
+        
+        
+
+    </script>
+</body>
+</html>

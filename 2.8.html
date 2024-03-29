@@ -8,7 +8,17 @@
 </head>
 <body>
     <script>
-        
+        function Timer(){
+            let dateNow=new Date();
+            let dateNewYear=new Date(2025,01,01);
+            let remainingTime=new Date(dateNewYear - dateNow);
+            let month=remainingTime.getMonth();
+            let day=remainingTime.getDay();
+            let hours=remainingTime.getHours();
+            let mnt=remainingTime.getMinutes();
+            console.log(`До Нового года осталось ${month} месяцев ${day} дней ${hours} часов ${mnt} минут`);
+        }
+      Timer();
     </script>
 </body>
 </html>
