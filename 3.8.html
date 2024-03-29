@@ -17,18 +17,14 @@
         "чт",
         "пт",
         "сб"];
-        let dayNow=date.getDay();
-        let dayTomorrow=(date.getDay()+1);
-        let dayPast=(date.getDay()-1);
-        let dayN=daysofWeek[dayNow];
-        let dayT=daysofWeek[dayTomorrow];
-        let dayP=daysofWeek[dayPast];
-        console.log(`сегодня ${dayN}  завтра ${dayT} вчера ${dayP}`);
+        let dataObj={
+            next:(date.getDay()+1),
+            curr:date.getDay(),
+            prev:(date.getDay()-1)
         }
-        CalcDaysofWeek();
-        
-        
-
+        console.log(` сегодня ${daysofWeek[dataObj.curr]}  вчера ${daysofWeek[dataObj.prev]} завтра ${daysofWeek[dataObj.next]}`);
+    }
+    CalcDaysofWeek();
     </script>
 </body>
 </html>
